@@ -10,9 +10,7 @@ using System.Collections;
     // Update is called once per frame
     void Update() {
         if (target) {
-
             Vector3 aheadPoint = target.position - new Vector3(0.5f, 0.5f, 0);
-            // Vector3 point = Camera.main.WorldToViewportPoint(aheadPoint);
 
             // Vector3 point = Camera.main.WorldToViewportPoint(target.position);
             Vector3 point = Camera.main.WorldToViewportPoint(aheadPoint);
