@@ -48,7 +48,7 @@ public class WorldGenerator : MonoBehaviour {
                 float x = j - 3.5f;
                 float y = (level.Length - 1) - i - 3.5f;
 
-                GameObject instance = Instantiate(toInstantiate, new Vector3(x, y, 0f), Quaternion.identity) as GameObject;
+                Instantiate(toInstantiate, new Vector3(x, y, 0f), Quaternion.identity);
                 // instance.transform.SetParent(boardHolder);
                 // Quaternion.AngleAxis(90.0f, new Vector3(0, 0, 1));
             }
