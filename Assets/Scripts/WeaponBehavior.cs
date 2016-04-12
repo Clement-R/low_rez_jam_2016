@@ -46,10 +46,6 @@ public class WeaponBehavior : MonoBehaviour {
     }
 
     void Update() {
-        playerFacing = player.GetComponent<GridMovement>().getFacing();
-
-        Debug.Log(playerFacing);
-
         if (Input.GetKey(KeyCode.Space) && Time.time > nextAttack) {
             Attack();
         }
