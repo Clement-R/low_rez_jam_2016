@@ -1,12 +1,13 @@
 fileFormatVersion: 2
-guid: 0b4ab22bf1380374985a75f93ff93a9f
-timeCreated: 1460307775
+guid: 40a365b5ab51c4847a1020e5cd49f049
+timeCreated: 1460494669
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: dagger_0
-    21300002: dagger_1
-    21300004: dagger_2
+    21300000: player_run_0
+    21300002: player_run_1
+    21300004: player_run_2
+    21300006: player_run_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -53,7 +54,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: dagger_0
+    - name: player_run_0
       rect:
         serializedVersion: 2
         x: 0
@@ -64,7 +65,7 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: dagger_1
+    - name: player_run_1
       rect:
         serializedVersion: 2
         x: 8
@@ -75,10 +76,21 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: dagger_2
+    - name: player_run_2
       rect:
         serializedVersion: 2
         x: 16
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: player_run_3
+      rect:
+        serializedVersion: 2
+        x: 24
         y: 0
         width: 8
         height: 8

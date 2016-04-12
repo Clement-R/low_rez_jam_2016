@@ -1,12 +1,17 @@
 fileFormatVersion: 2
-guid: 0b4ab22bf1380374985a75f93ff93a9f
-timeCreated: 1460307775
+guid: 707c9686defb60841a5d71583763a396
+timeCreated: 1460496572
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: dagger_0
-    21300002: dagger_1
-    21300004: dagger_2
+    21300000: player_idle_0
+    21300002: player_idle_1
+    21300004: player_idle_2
+    21300006: player_idle_3
+    21300008: player_idle_4
+    21300010: player_idle_5
+    21300012: player_idle_6
+    21300014: player_idle_7
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -53,7 +58,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: dagger_0
+    - name: player_idle_0
       rect:
         serializedVersion: 2
         x: 0
@@ -64,7 +69,7 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: dagger_1
+    - name: player_idle_1
       rect:
         serializedVersion: 2
         x: 8
@@ -75,10 +80,65 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: dagger_2
+    - name: player_idle_2
       rect:
         serializedVersion: 2
         x: 16
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: player_idle_3
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: player_idle_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: player_idle_5
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: player_idle_6
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: player_idle_7
+      rect:
+        serializedVersion: 2
+        x: 56
         y: 0
         width: 8
         height: 8
