@@ -50,3 +50,6 @@ TagManager:
   - name: Weapon
     uniqueID: 1026439549
     locked: 0
+  - name: Bombs
+    uniqueID: 190406921
+    locked: 0
