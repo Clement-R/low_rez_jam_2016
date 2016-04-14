@@ -222,16 +222,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 438946, guid: b3138723ec388134e8db381f177df7d9, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 21268160, guid: b3138723ec388134e8db381f177df7d9, type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 707c9686defb60841a5d71583763a396,
-        type: 3}
-    - target: {fileID: 11438446, guid: b3138723ec388134e8db381f177df7d9, type: 2}
-      propertyPath: speed
-      value: 5
+    - target: {fileID: 6101318, guid: b3138723ec388134e8db381f177df7d9, type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3138723ec388134e8db381f177df7d9, type: 2}
@@ -282,38 +277,3 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3ec89eb9fd6a4b8ba89d6852661aac4, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1979428233 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 187986, guid: b3138723ec388134e8db381f177df7d9, type: 2}
-  m_PrefabInternal: {fileID: 914711229}
---- !u!61 &1979428234
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1979428233}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
---- !u!95 &1979428237
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1979428233}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 096851c59e6ba894daa5ad42daccb9eb, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
