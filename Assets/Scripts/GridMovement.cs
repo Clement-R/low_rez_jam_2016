@@ -15,14 +15,26 @@ public class GridMovement : MonoBehaviour {
     }
 
     void FixedUpdate() {
-        if (Input.GetKey(KeyCode.Q) && transform.position == pos) {
+		if (Input.GetKey(KeyCode.Q) && transform.position == pos) {
             pos += Vector3.left;
+			if (pos.x < -3.5f) {
+				pos -= Vector3.left;
+			}
         } else if (Input.GetKey(KeyCode.D) && transform.position == pos) {
             pos += Vector3.right;
+			if (pos.x > 3.5f) {
+				pos -= Vector3.right;
+			}
         } else  if (Input.GetKey(KeyCode.Z) && transform.position == pos) {
             pos += Vector3.up;
+			if (pos.y > 3.5f) {
+				pos -= Vector3.up;
+			}
         } else  if (Input.GetKey(KeyCode.S) && transform.position == pos) {
             pos += Vector3.down;
+			if (pos.y < -3.5f) {
+				pos -= Vector3.down;
+			}
         }
 
 		if (transform.position != pos) {

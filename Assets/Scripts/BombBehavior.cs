@@ -20,4 +20,8 @@ public class BombBehavior : MonoBehaviour {
 	public void setDirection(Vector3 direction) {
 		this.direction = direction;
 	}
+
+	void OnBecameInvisible() {
+		Debug.Log ("Destroyed");
+	}
 }
