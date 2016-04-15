@@ -10,9 +10,10 @@ GameObject:
   - 4: {fileID: 473332}
   - 114: {fileID: 11413790}
   - 114: {fileID: 11452956}
+  - 114: {fileID: 11426176}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: God
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42,6 +43,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   floorTiles:
   - {fileID: 150920, guid: 2b6e619aefbc8f9409acb31214cb96f7, type: 2}
+--- !u!114 &11426176
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 189882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e735b88fe183f40cdb89ddf2e78b1ba7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11452956
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -54,14 +66,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bombPrefab: {fileID: 175726, guid: e2e382097cfa3428f85f260b0d7bff45, type: 2}
-  fireRate: 0.25
+  fireRate: 2
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: fireRate
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 189882}

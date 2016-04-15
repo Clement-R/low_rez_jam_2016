@@ -21,7 +21,11 @@ public class BombBehavior : MonoBehaviour {
 		this.direction = direction;
 	}
 
+	public void setSpeed(float newSpeed) {
+		this.speed = newSpeed;
+	}
+
 	void OnBecameInvisible() {
-		Debug.Log ("Destroyed");
+		Destroy(this.gameObject);
 	}
 }

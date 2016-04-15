@@ -5,8 +5,9 @@ using System.Collections.Generic;
 public class BombGenerator : MonoBehaviour {
 	private float[] positions = {0.5f, 1.5f, 2.5f, 3.5f};
 	public GameObject bombPrefab;
-	public float fireRate = 0.5F;
-	private float nextFire = 0.0F;
+
+	public float fireRate = 0.75f;
+	private float nextFire = 0.0f;
 
 	// Use this for initialization
 	void Start () {
@@ -69,6 +70,19 @@ public class BombGenerator : MonoBehaviour {
 
 		// Instantiate the bomb prefab at the given position
 		GameObject bomb = Instantiate (bombPrefab, finalPos, Quaternion.identity) as GameObject;
-		bomb.GetComponent<BombBehavior> ().setDirection (bombDirection);
+		BombBehavior behavior = bomb.GetComponent<BombBehavior> ();
+		behavior.setDirection (bombDirection);
+		float randSpeed = this.positions[Random.Range (0, this.positions.Length)];
+		behavior.setSpeed (randSpeed);
+	}
+
+	public void setFireRate(float newFireRate) {
+		if (newFireRate >= 0.1f) {
+			this.fireRate = newFireRate;
+		}
+	}
+
+	public float getFireRate() {
+		return this.fireRate;
 	}
 }

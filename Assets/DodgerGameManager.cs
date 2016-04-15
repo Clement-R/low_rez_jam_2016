@@ -3,13 +3,25 @@ using System.Collections;
 
 public class DodgerGameManager : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
+	int score = 0;
+	float baseFireRate = .0f;
+	BombGenerator generator;
+
+	void Start() {
+		generator = this.GetComponent<BombGenerator> ();
+		baseFireRate = generator.getFireRate ();
+		InvokeRepeating("incrementScore", 0, 1.0f);
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	public void incrementScore() {
+		score++;
+		if (score % 10 == 0) {
+			this.updateDifficulty ();
+		}
+	}
+
+	private void updateDifficulty() {
+		Debug.Log (generator.getFireRate());
+		generator.setFireRate (baseFireRate - (score / 200.0f));
 	}
 }
