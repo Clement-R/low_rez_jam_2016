@@ -3,7 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class BombGenerator : MonoBehaviour {
-	private float[] positions = {0.5f, 1.5f, 2.5f, 3.5f};
+	private float[] positions = {1.0f, 1.5f, 2.5f, 3.5f};
+	private float[] speeds = {0.5f, 1.5f, 2.5f, 3.5f};
 	public GameObject bombPrefab;
 
 	public float fireRate = 0.75f;
@@ -72,7 +73,7 @@ public class BombGenerator : MonoBehaviour {
 		GameObject bomb = Instantiate (bombPrefab, finalPos, Quaternion.identity) as GameObject;
 		BombBehavior behavior = bomb.GetComponent<BombBehavior> ();
 		behavior.setDirection (bombDirection);
-		float randSpeed = this.positions[Random.Range (0, this.positions.Length)];
+		float randSpeed = this.speeds[Random.Range (0, this.speeds.Length)];
 		behavior.setSpeed (randSpeed);
 	}
 
