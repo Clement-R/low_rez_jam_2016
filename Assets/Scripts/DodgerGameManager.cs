@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class DodgerGameManager : MonoBehaviour {
 
@@ -15,7 +16,12 @@ public class DodgerGameManager : MonoBehaviour {
 
 	public void incrementScore() {
 		score++;
-		if (score % 10 == 0) {
+
+        GameObject scoreObj = GameObject.FindGameObjectWithTag("Score");
+        Text scoreText = scoreObj.GetComponent<Text>();
+        scoreText.text = "Score : " + score;
+
+        if (score % 10 == 0) {
 			this.updateDifficulty ();
 		}
 	}
